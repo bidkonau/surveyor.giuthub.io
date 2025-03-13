@@ -6,12 +6,8 @@ A blog site featuring insights on quantity surveying practices in Australia.
 ## GitHub Pages Deployment Instructions
 
 1. Fork or clone this repository
-2. Update the `<base>` tag in index.html with your repository name:
-   ```html
-   <base href="/your-repo-name/">
-   ```
-3. Push to your GitHub repository
-4. Enable GitHub Pages in your repository settings:
+2. Push to your GitHub repository
+3. Enable GitHub Pages in your repository settings:
    - Go to Settings > Pages
    - Set the source to GitHub Actions
    - The deployment workflow will automatically build and deploy the site
