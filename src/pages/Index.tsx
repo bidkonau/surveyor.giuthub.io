@@ -15,7 +15,7 @@ const Index = () => {
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && entry.target instanceof HTMLElement) {
           entry.target.classList.add('animate-fade-up');
           entry.target.style.opacity = '1';
           observer.unobserve(entry.target);
