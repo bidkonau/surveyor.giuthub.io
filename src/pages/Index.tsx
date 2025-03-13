@@ -24,10 +24,18 @@ const Index = () => {
     }, observerOptions);
 
     const elements = document.querySelectorAll('.animate-on-scroll');
-    elements.forEach(el => observer.observe(el));
+    elements.forEach(el => {
+      if (el instanceof HTMLElement) {
+        observer.observe(el);
+      }
+    });
 
     return () => {
-      elements.forEach(el => observer.unobserve(el));
+      elements.forEach(el => {
+        if (el instanceof HTMLElement) {
+          observer.unobserve(el);
+        }
+      });
     };
   }, []);
 
@@ -89,11 +97,11 @@ const Index = () => {
             
             <p>The construction industry in Australia has undergone significant transformations over the past decade, with technological advancements, changing regulatory environments, and evolving client expectations reshaping project delivery frameworks. At the center of these changes are <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors</a>, professionals whose roles have expanded far beyond traditional cost estimation and bill of quantities preparation.</p>
             
-            <p>Today's <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors in Melbourne</a> and across Australia are embracing new technologies, methodologies, and service offerings to provide enhanced value to clients throughout the construction lifecycle. This evolution reflects broader industry trends toward integrated project delivery, data-driven decision-making, and sustainable construction practices.</p>
+            <p>Today's quantity surveyors in Melbourne and across Australia are embracing new technologies, methodologies, and service offerings to provide enhanced value to clients throughout the construction lifecycle. This evolution reflects broader industry trends toward integrated project delivery, data-driven decision-making, and sustainable construction practices.</p>
             
             <h3>From Cost Consultants to Strategic Advisors</h3>
             
-            <p>Historically, quantity surveyors primarily focused on measurement and costing of construction works. While these technical skills remain foundational, modern <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors Melbourne</a> professionals now position themselves as strategic advisors who contribute to project success across multiple dimensions.</p>
+            <p>Historically, quantity surveyors primarily focused on measurement and costing of construction works. While these technical skills remain foundational, modern <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors in Melbourne</a> professionals now position themselves as strategic advisors who contribute to project success across multiple dimensions.</p>
             
             <p>This expanded role encompasses risk management, value engineering, procurement strategy, contractual advice, and dispute resolution. By integrating cost management with broader project objectives, quantity surveyors help clients navigate complex decision-making processes and balance competing priorities of time, cost, quality, and sustainability.</p>
             
@@ -101,21 +109,21 @@ const Index = () => {
             
             <p>The adoption of Building Information Modeling (BIM) represents one of the most significant technological shifts affecting quantity surveying practice. BIM enables the creation of detailed digital representations of built assets, incorporating physical and functional characteristics that support informed decision-making throughout the asset lifecycle.</p>
             
-            <p>Forward-thinking <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors</a> are embracing BIM capabilities to enhance measurement accuracy, improve cost forecasting, and facilitate collaborative working practices. The integration of quantity surveying functions with BIM workflows allows for real-time cost feedback on design changes, automated quantity takeoffs, and improved visualization of cost implications.</p>
+            <p>Forward-thinking quantity surveyors are embracing BIM capabilities to enhance measurement accuracy, improve cost forecasting, and facilitate collaborative working practices. The integration of quantity surveying functions with BIM workflows allows for real-time cost feedback on design changes, automated quantity takeoffs, and improved visualization of cost implications.</p>
             
-            <p>Beyond BIM, quantity surveyors are leveraging a range of digital tools to enhance service delivery, including cloud-based collaboration platforms, automated reporting systems, and data analytics solutions. These technologies not only improve efficiency and accuracy but also enable quantity surveyors to generate valuable insights from project data.</p>
+            <p>Beyond BIM, <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors Melbourne</a> are leveraging a range of digital tools to enhance service delivery, including cloud-based collaboration platforms, automated reporting systems, and data analytics solutions. These technologies not only improve efficiency and accuracy but also enable quantity surveyors to generate valuable insights from project data.</p>
             
             <h3>Life Cycle Costing and Sustainability</h3>
             
             <p>As sustainability considerations become increasingly central to construction projects, quantity surveyors are expanding their focus beyond initial capital costs to encompass whole-life costing approaches. This shift recognizes that decisions made during design and construction phases have significant implications for operational costs, maintenance requirements, and environmental performance throughout an asset's lifetime.</p>
             
-            <p><a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors in Melbourne</a> with expertise in life cycle costing help clients evaluate long-term financial implications of different design options, material selections, and building systems. This approach supports informed investment decisions that balance immediate budget constraints with long-term value considerations.</p>
+            <p>Quantity surveyors with expertise in life cycle costing help clients evaluate long-term financial implications of different design options, material selections, and building systems. This approach supports informed investment decisions that balance immediate budget constraints with long-term value considerations.</p>
             
             <p>Additionally, quantity surveyors are increasingly involved in sustainability certification processes, carbon footprint assessments, and environmental rating schemes. Their cost expertise helps translate sustainability ambitions into financially viable implementation strategies.</p>
             
             <h3>Specialized Knowledge and Sector Expertise</h3>
             
-            <p>As construction projects become more complex and technically sophisticated, many quantity surveying practices are developing specialized expertise in particular sectors or project types. This specialization allows <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors Melbourne</a> to provide more tailored advice that reflects the unique challenges, opportunities, and benchmarks relevant to specific contexts.</p>
+            <p>As construction projects become more complex and technically sophisticated, many quantity surveying practices are developing specialized expertise in particular sectors or project types. This specialization allows quantity surveyors to provide more tailored advice that reflects the unique challenges, opportunities, and benchmarks relevant to specific contexts.</p>
             
             <p>Whether focusing on healthcare facilities, infrastructure projects, residential developments, or industrial construction, sector specialists bring valuable insights regarding cost drivers, procurement options, and risk profiles. This depth of knowledge enhances the quality of cost planning advice and supports more accurate forecasting.</p>
             
@@ -131,7 +139,7 @@ const Index = () => {
               <li>Increased emphasis on post-occupancy evaluation and performance measurement</li>
             </ul>
             
-            <p>For clients navigating Australia's complex construction landscape, engaging experienced <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors</a> with the right blend of technical expertise, industry knowledge, and strategic thinking remains a key factor in achieving successful project outcomes. As the profession continues to adapt and innovate, quantity surveyors will remain essential contributors to the delivery of built assets that meet functional requirements, commercial objectives, and sustainability goals.</p>
+            <p>For clients navigating Australia's complex construction landscape, engaging experienced quantity surveyors with the right blend of technical expertise, industry knowledge, and strategic thinking remains a key factor in achieving successful project outcomes. As the profession continues to adapt and innovate, quantity surveyors will remain essential contributors to the delivery of built assets that meet functional requirements, commercial objectives, and sustainability goals.</p>
           </article>
           
           <div className="border-t border-border/30 my-16 max-w-3xl mx-auto"></div>
@@ -147,11 +155,11 @@ const Index = () => {
               loading="lazy"
             />
             
-            <p>In the increasingly complex and competitive construction industry, effective cost management has become a critical success factor for projects of all sizes. <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors</a> play a pivotal role in this domain, employing sophisticated strategies to optimize expenditure while maintaining project objectives related to quality, functionality, and timeline. This article explores the key approaches <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors in Melbourne</a> and across Australia use to add tangible value throughout the project lifecycle.</p>
+            <p>In the increasingly complex and competitive construction industry, effective cost management has become a critical success factor for projects of all sizes. <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors</a> play a pivotal role in this domain, employing sophisticated strategies to optimize expenditure while maintaining project objectives related to quality, functionality, and timeline. This article explores the key approaches quantity surveyors in Melbourne and across Australia use to add tangible value throughout the project lifecycle.</p>
             
             <h3>Early Stage Cost Planning: Setting the Foundation</h3>
             
-            <p>Perhaps the most significant opportunity to influence project costs occurs during the initial planning and design phases. Experienced <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors Melbourne</a> professionals understand that decisions made at this stage establish the cost framework for the entire project, with diminishing ability to affect expenditure as design development progresses.</p>
+            <p>Perhaps the most significant opportunity to influence project costs occurs during the initial planning and design phases. Experienced quantity surveyors understand that decisions made at this stage establish the cost framework for the entire project, with diminishing ability to affect expenditure as design development progresses.</p>
             
             <p>Strategic cost planning involves establishing realistic budgets based on client objectives, market conditions, and project constraints. This includes:</p>
             
@@ -163,13 +171,13 @@ const Index = () => {
               <li>Benchmarking proposals against comparable projects to validate assumptions</li>
             </ul>
             
-            <p>By engaging <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors</a> from project inception, clients can benefit from cost-informed design development that reduces the likelihood of budget overruns and costly redesign iterations.</p>
+            <p>By engaging <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors in Melbourne</a> from project inception, clients can benefit from cost-informed design development that reduces the likelihood of budget overruns and costly redesign iterations.</p>
             
             <h3>Value Engineering: Optimizing Value-to-Cost Ratios</h3>
             
             <p>Value engineering represents a systematic approach to analyzing function, quality, and cost relationships to achieve optimal value. Rather than simple cost-cutting, this methodology focuses on enhancing value by identifying and eliminating unnecessary expenditure without compromising essential project requirements.</p>
             
-            <p><a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors in Melbourne</a> facilitate structured value engineering workshops that bring together design teams, contractors, and clients to explore alternative approaches. These collaborative sessions examine:</p>
+            <p>Quantity surveyors facilitate structured value engineering workshops that bring together design teams, contractors, and clients to explore alternative approaches. These collaborative sessions examine:</p>
             
             <ul>
               <li>Material specifications and potential substitutions</li>
@@ -183,7 +191,7 @@ const Index = () => {
             
             <h3>Procurement Strategy: Leveraging Market Dynamics</h3>
             
-            <p>The selection of appropriate procurement routes significantly influences project costs, schedules, and risk profiles. <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors Melbourne</a> professionals provide strategic advice on procurement approaches tailored to specific project requirements and market conditions.</p>
+            <p>The selection of appropriate procurement routes significantly influences project costs, schedules, and risk profiles. <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors Melbourne</a> provide strategic advice on procurement approaches tailored to specific project requirements and market conditions.</p>
             
             <p>Key considerations in procurement strategy development include:</p>
             
@@ -195,11 +203,11 @@ const Index = () => {
               <li>Opportunities for early contractor involvement and collaboration</li>
             </ul>
             
-            <p>By developing customized procurement strategies, <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors</a> help clients navigate market uncertainties and establish contractual frameworks that align commercial incentives with project objectives. This may involve traditional competitive tendering, two-stage approaches, negotiated contracts, or collaborative delivery models depending on specific circumstances.</p>
+            <p>By developing customized procurement strategies, quantity surveyors help clients navigate market uncertainties and establish contractual frameworks that align commercial incentives with project objectives. This may involve traditional competitive tendering, two-stage approaches, negotiated contracts, or collaborative delivery models depending on specific circumstances.</p>
             
             <h3>Cost Control During Construction: Proactive Management</h3>
             
-            <p>Once construction commences, effective cost control becomes essential to maintain budget alignment. <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors in Melbourne</a> implement robust systems to track expenditure, manage variations, and forecast final costs with increasing accuracy as works progress.</p>
+            <p>Once construction commences, effective cost control becomes essential to maintain budget alignment. Quantity surveyors implement robust systems to track expenditure, manage variations, and forecast final costs with increasing accuracy as works progress.</p>
             
             <p>Proactive cost management during construction includes:</p>
             
@@ -215,13 +223,13 @@ const Index = () => {
             
             <h3>Final Account Settlement: Securing Fair Outcomes</h3>
             
-            <p>As projects reach completion, <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors Melbourne</a> professionals play a crucial role in final account negotiations, ensuring fair settlements that reflect contractual entitlements and actual work completed. This process requires detailed analysis of payment applications, variations, claims, and potential counterclaims.</p>
+            <p>As projects reach completion, quantity surveyors play a crucial role in final account negotiations, ensuring fair settlements that reflect contractual entitlements and actual work completed. This process requires detailed analysis of payment applications, variations, claims, and potential counterclaims.</p>
             
             <p>Quantity surveyors bring technical expertise and commercial acumen to these negotiations, helping clients avoid overpayment while maintaining constructive relationships with project delivery partners. Thorough documentation and clear audit trails established throughout the project facilitate efficient resolution of financial matters at completion.</p>
             
             <h3>Beyond Traditional Cost Management</h3>
             
-            <p>While core cost management functions remain essential, forward-thinking <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors</a> are expanding their value proposition to encompass broader commercial and strategic considerations. This may include:</p>
+            <p>While core cost management functions remain essential, forward-thinking quantity surveyors are expanding their value proposition to encompass broader commercial and strategic considerations. This may include:</p>
             
             <ul>
               <li>Funding and feasibility analysis for development projects</li>
@@ -231,7 +239,7 @@ const Index = () => {
               <li>Portfolio-level cost benchmarking and optimization</li>
             </ul>
             
-            <p>By combining technical quantity surveying expertise with commercial acumen and industry knowledge, <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors in Melbourne</a> provide comprehensive support that extends beyond traditional cost management boundaries.</p>
+            <p>By combining technical quantity surveying expertise with commercial acumen and industry knowledge, <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors Melbourne</a> provide comprehensive support that extends beyond traditional cost management boundaries.</p>
             
             <h3>Selecting the Right Quantity Surveying Partner</h3>
             
@@ -245,7 +253,7 @@ const Index = () => {
               <li>Investment in technologies that enhance service delivery</li>
             </ul>
             
-            <p>By engaging well-qualified <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors Melbourne</a> professionals with appropriate expertise, clients position their projects for successful cost outcomes that balance immediate budget constraints with long-term value considerations.</p>
+            <p>By engaging well-qualified quantity surveyors with appropriate expertise, clients position their projects for successful cost outcomes that balance immediate budget constraints with long-term value considerations.</p>
           </article>
           
           <div className="border-t border-border/30 my-16 max-w-3xl mx-auto"></div>
@@ -261,11 +269,11 @@ const Index = () => {
               loading="lazy"
             />
             
-            <p>As environmental considerations increasingly influence construction and development decisions, the intersection of sustainability and cost management has become a critical domain for industry professionals. <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors</a> are uniquely positioned at this nexus, helping clients navigate the financial implications of sustainable design choices while supporting the achievement of environmental objectives. This article explores how <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors in Melbourne</a> and across Australia are integrating sustainability considerations into their practice.</p>
+            <p>As environmental considerations increasingly influence construction and development decisions, the intersection of sustainability and cost management has become a critical domain for industry professionals. <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors</a> are uniquely positioned at this nexus, helping clients navigate the financial implications of sustainable design choices while supporting the achievement of environmental objectives. This article explores how quantity surveyors in Australia are integrating sustainability considerations into their practice.</p>
             
             <h3>The Business Case for Sustainable Construction</h3>
             
-            <p>The perception that sustainable building practices inevitably increase costs has been challenged by growing evidence that thoughtfully designed green buildings can deliver substantial economic benefits alongside environmental advantages. Forward-thinking <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors Melbourne</a> professionals help clients understand these potential benefits, which include:</p>
+            <p>The perception that sustainable building practices inevitably increase costs has been challenged by growing evidence that thoughtfully designed green buildings can deliver substantial economic benefits alongside environmental advantages. Forward-thinking quantity surveyors help clients understand these potential benefits, which include:</p>
             
             <ul>
               <li>Reduced operational costs through energy and water efficiency</li>
@@ -275,11 +283,11 @@ const Index = () => {
               <li>Access to green financing and incentive programs</li>
             </ul>
             
-            <p>By quantifying these benefits alongside initial capital costs, quantity surveyors provide a more comprehensive financial picture that supports informed decision-making. This holistic approach often reveals that sustainable options offer compelling value propositions when viewed through a wider economic lens.</p>
+            <p>By quantifying these benefits alongside initial capital costs, <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors in Melbourne</a> provide a more comprehensive financial picture that supports informed decision-making. This holistic approach often reveals that sustainable options offer compelling value propositions when viewed through a wider economic lens.</p>
             
             <h3>Life Cycle Cost Analysis: Beyond Initial Investment</h3>
             
-            <p>Traditional cost planning focuses primarily on capital expenditure during construction. However, <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors</a> with sustainability expertise recognize that initial costs represent just one component of a building's lifetime economic impact. Life cycle cost analysis (LCCA) extends the evaluation timeframe to encompass operational expenses, maintenance requirements, and end-of-life considerations.</p>
+            <p>Traditional cost planning focuses primarily on capital expenditure during construction. However, quantity surveyors with sustainability expertise recognize that initial costs represent just one component of a building's lifetime economic impact. Life cycle cost analysis (LCCA) extends the evaluation timeframe to encompass operational expenses, maintenance requirements, and end-of-life considerations.</p>
             
             <p>This approach involves assessing costs across several categories:</p>
             
@@ -291,7 +299,7 @@ const Index = () => {
               <li>Disposal and potential residual value</li>
             </ul>
             
-            <p><a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors in Melbourne</a> employ sophisticated modeling techniques to project these costs over building lifespans, typically 25-50 years. By applying appropriate discount rates to future expenditures, they calculate net present values that allow meaningful comparison between different design approaches and system specifications.</p>
+            <p>Quantity surveyors employ sophisticated modeling techniques to project these costs over building lifespans, typically 25-50 years. By applying appropriate discount rates to future expenditures, they calculate net present values that allow meaningful comparison between different design approaches and system specifications.</p>
             
             <p>This analysis often reveals that options with higher initial costs may deliver significant savings over time, particularly for elements with substantial operational impacts such as HVAC systems, facade designs, and renewable energy installations.</p>
             
@@ -309,11 +317,11 @@ const Index = () => {
               <li>Balancing embodied carbon considerations with operational performance</li>
             </ul>
             
-            <p><a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors</a> help clients understand potential cost implications of low-carbon alternatives, which may include material premiums, construction method adaptations, or certification requirements. They also monitor emerging carbon pricing mechanisms and regulatory developments that could influence future cost structures.</p>
+            <p>Quantity surveyors help clients understand potential cost implications of low-carbon alternatives, which may include material premiums, construction method adaptations, or certification requirements. They also monitor emerging carbon pricing mechanisms and regulatory developments that could influence future cost structures.</p>
             
             <h3>Certifications and Rating Systems: Navigating Compliance</h3>
             
-            <p>Sustainability certifications such as Green Star, NABERS, and LEED have become increasingly important market differentiators in Australia's commercial property sector. <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors in Melbourne</a> with expertise in these rating systems provide valuable guidance on cost-effective pathways to certification.</p>
+            <p>Sustainability certifications such as Green Star, NABERS, and LEED have become increasingly important market differentiators in Australia's commercial property sector. Quantity surveyors with expertise in these rating systems provide valuable guidance on cost-effective pathways to certification.</p>
             
             <p>This specialized service includes:</p>
             
@@ -329,7 +337,7 @@ const Index = () => {
             
             <h3>Renewable Energy Integration: Financial Analysis</h3>
             
-            <p>On-site renewable energy generation, particularly solar photovoltaic systems, represents an increasingly viable option for many Australian projects. <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors Melbourne</a> provide comprehensive financial analysis of renewable energy investments, considering:</p>
+            <p>On-site renewable energy generation, particularly solar photovoltaic systems, represents an increasingly viable option for many Australian projects. Quantity surveyors provide comprehensive financial analysis of renewable energy investments, considering:</p>
             
             <ul>
               <li>System installation and connection costs</li>
@@ -339,11 +347,11 @@ const Index = () => {
               <li>Financial metrics including payback periods and IRR</li>
             </ul>
             
-            <p>This analysis helps clients determine appropriate system sizing and implementation timing based on project-specific financial parameters. <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors</a> may also evaluate alternative procurement approaches such as power purchase agreements or leasing arrangements that reduce upfront capital requirements.</p>
+            <p>This analysis helps clients determine appropriate system sizing and implementation timing based on project-specific financial parameters. <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors in Melbourne</a> may also evaluate alternative procurement approaches such as power purchase agreements or leasing arrangements that reduce upfront capital requirements.</p>
             
             <h3>Sustainable Procurement: Supply Chain Considerations</h3>
             
-            <p>Procurement strategies play a crucial role in achieving sustainability objectives while managing costs effectively. <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors in Melbourne</a> help clients develop approaches that consider environmental and social factors alongside financial considerations.</p>
+            <p>Procurement strategies play a crucial role in achieving sustainability objectives while managing costs effectively. Quantity surveyors help clients develop approaches that consider environmental and social factors alongside financial considerations.</p>
             
             <p>Key elements of sustainable procurement advisory include:</p>
             
@@ -355,11 +363,11 @@ const Index = () => {
               <li>Monitoring compliance with sustainability requirements</li>
             </ul>
             
-            <p>By integrating sustainability considerations into procurement processes, <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors Melbourne</a> help clients extend their environmental commitment throughout the supply chain. This approach often reveals opportunities to achieve sustainability outcomes without significant cost premiums through thoughtful supplier engagement and specification development.</p>
+            <p>By integrating sustainability considerations into procurement processes, quantity surveyors help clients extend their environmental commitment throughout the supply chain. This approach often reveals opportunities to achieve sustainability outcomes without significant cost premiums through thoughtful supplier engagement and specification development.</p>
             
             <h3>Future Directions: Advancing Sustainable Cost Management</h3>
             
-            <p>The field of sustainable cost management continues to evolve rapidly, with <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors</a> at the forefront of several emerging trends:</p>
+            <p>The field of sustainable cost management continues to evolve rapidly, with quantity surveyors at the forefront of several emerging trends:</p>
             
             <ul>
               <li>Integration of artificial intelligence and machine learning for optimization of sustainable design options</li>
@@ -369,13 +377,13 @@ const Index = () => {
               <li>Evolution of carbon accounting and potential integration with financial metrics</li>
             </ul>
             
-            <p>As these practices mature, <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors in Melbourne</a> will continue expanding their capabilities to support clients in achieving environmental objectives while managing financial resources effectively. This evolution represents a natural extension of the profession's core purpose: optimizing value in the built environment.</p>
+            <p>As these practices mature, <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors Melbourne</a> will continue expanding their capabilities to support clients in achieving environmental objectives while managing financial resources effectively. This evolution represents a natural extension of the profession's core purpose: optimizing value in the built environment.</p>
             
             <h3>Conclusion: The Essential Role of Quantity Surveyors in Sustainable Construction</h3>
             
-            <p>As Australia's construction industry embraces more ambitious sustainability goals, the role of <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors</a> in reconciling environmental aspirations with financial realities becomes increasingly vital. Through life cycle costing, embodied carbon assessment, certification guidance, and other specialized services, quantity surveyors help translate sustainability principles into financially viable implementation strategies.</p>
+            <p>As Australia's construction industry embraces more ambitious sustainability goals, the role of quantity surveyors in reconciling environmental aspirations with financial realities becomes increasingly vital. Through life cycle costing, embodied carbon assessment, certification guidance, and other specialized services, quantity surveyors help translate sustainability principles into financially viable implementation strategies.</p>
             
-            <p>For clients committed to environmental responsibility, engaging <a href="https://bidkon.com.au/quantity-surveyors-melbourne/">Quantity Surveyors Melbourne</a> with sustainability expertise represents a valuable investment that supports informed decision-making, cost-effective implementation, and optimal outcomes across environmental, social, and economic dimensions.</p>
+            <p>For clients committed to environmental responsibility, engaging quantity surveyors with sustainability expertise represents a valuable investment that supports informed decision-making, cost-effective implementation, and optimal outcomes across environmental, social, and economic dimensions.</p>
           </article>
         </div>
       </section>
